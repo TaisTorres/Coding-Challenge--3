@@ -1,7 +1,16 @@
 // Task 1 - Product Price Management
-let number = [12, 35, 20, 19, 9];
-number.push(23);
+let prices = [12, 35, 20, 19, 9];
+prices.push(23);
 // Added new price to array
-number.shift();
+prices.shift();
 // Removed the first price from array
-console.log("Updated Prices: ", number);
+console.log("Updated Prices: ", prices);
+
+// Task 2 - Modifying Customer Orders
+let orders = [2, 4, 3, 5, 8]
+orders[2] += 5 
+// Added 5 to 3rd order
+let total = orders.reduce((sum, order) => sum + order, 0)
+// calculation for total number of orders
+console.log(orders)
+console.log(total)
