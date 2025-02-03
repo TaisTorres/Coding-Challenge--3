@@ -14,3 +14,15 @@ let total = orders.reduce((sum, order) => sum + order, 0)
 // calculation for total number of orders
 console.log(orders)
 console.log(total)
+
+// Task 3: Employee Performance Tracking
+let employee = {
+    name: "John Deer",
+    role: "Assistant Manager",
+    performanceScore: 78,
+    isActive: true
+};
+employee.performanceScore = 84;
+employee.promotionEligible = true
+
+console.log(employee)
