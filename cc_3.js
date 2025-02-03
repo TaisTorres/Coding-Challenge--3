@@ -19,7 +19,7 @@ orders[2] += 5
 let total = orders.reduce((sum, order) => sum + order, 0)
 
 console.log(orders)
-console.log(total)
+console.log("Total Orders: ", total)
 
 // Task 3: Employee Performance Tracking
 let employee = {
@@ -42,4 +42,18 @@ let customers = [
 // Add a new feedback object to the array
 customers.push({customerName: "Pen", feedbackText: "Poor quality.", rating: 3});
 
-console.log(customers)
+console.log("Customer Feedback: ", customers)
+
+// Task 5: Inventory Management System 
+let shoeInventory = {
+    itemName: "Shoes",
+    stockCount: 30,
+    price: 60,
+
+    // Function that returns the total value of the inventory
+    calculateTotalValue: function() {
+        return this.stockCount * this.price
+    }
+};
+console.log("Shoes Inventory Detail: ", shoeInventory);
+console.log("Total Value: ", shoeInventory.calculateTotalValue());
